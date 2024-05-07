@@ -1,0 +1,44 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 1314, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/usr/local/lib/python3.10/dist-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+b = np.linalg.det(a)
+print(b.round())
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mLinAlgError[0m                               Traceback (most recent call last)
+[0;32m<ipython-input-26-fcd92af831cd>[0m in [0;36m<cell line: 1>[0;34m()[0m
+[0;32m----> 1[0;31m [0mb[0m [0;34m=[0m [0mnp[0m[0;34m.[0m[0mlinalg[0m[0;34m.[0m[0mdet[0m[0;34m([0m[0ma[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      2[0m [0mprint[0m[0;34m([0m[0mb[0m[0;34m.[0m[0mround[0m[0;34m([0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.10/dist-packages/numpy/linalg/linalg.py[0m in [0;36mdet[0;34m(a)[0m
+[1;32m   2174[0m     """
+[1;32m   2175[0m     [0ma[0m [0;34m=[0m [0masarray[0m[0;34m([0m[0ma[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 2176[0;31m     [0m_assert_stacked_2d[0m[0;34m([0m[0ma[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   2177[0m     [0m_assert_stacked_square[0m[0;34m([0m[0ma[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   2178[0m     [0mt[0m[0;34m,[0m [0mresult_t[0m [0;34m=[0m [0m_commonType[0m[0;34m([0m[0ma[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.10/dist-packages/numpy/linalg/linalg.py[0m in [0;36m_assert_stacked_2d[0;34m(*arrays)[0m
+[1;32m    204[0m     [0;32mfor[0m [0ma[0m [0;32min[0m [0marrays[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    205[0m         [0;32mif[0m [0ma[0m[0;34m.[0m[0mndim[0m [0;34m<[0m [0;36m2[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 206[0;31m             raise LinAlgError('%d-dimensional array given. Array must be '
+[0m[1;32m    207[0m                     'at least two-dimensional' % a.ndim)
+[1;32m    208[0m [0;34m[0m[0m
+
+[0;31mLinAlgError[0m: 0-dimensional array given. Array must be at least two-dimensional
+

@@ -184,10 +184,6 @@
 <li class="toctree-l1"><a class="reference internal" href="tugas4.html">DETERMINAN</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">KONSEP EIGENVALUE DAN EIGENVEKTOR</a></li>
 
-
-
-
-
 </ul>
 
     </div>
@@ -388,11 +384,13 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#v">𝐴
-𝑣</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-eigenvalues-dan-eigenvectors">Menghitung Eigenvalues dan Eigenvectors</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-nilai-eigen-value-dan-eigen-vector-pada-matriks-2x2-menggunakan-numpy">Mencari nilai eigen value dan eigen vector pada matriks 2x2 menggunakan numpy</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-nilai-eigen-value-dan-eigen-vector-pada-matriks-3x3-menggunakan-numpy">Mencari nilai eigen value dan eigen vector pada matriks 3x3 menggunakan numpy</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-implementasi-eigenvalue-dan-eigenvector">Contoh Implementasi Eigenvalue dan Eigenvector</a></li>
+𝑣</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-eigenvalues-dan-eigenvectors">Menghitung Eigenvalues dan Eigenvectors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-nilai-eigen-value-dan-eigen-vector-pada-matriks-2x2-menggunakan-numpy">Mencari nilai eigen value dan eigen vector pada matriks 2x2 menggunakan numpy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-nilai-eigen-value-dan-eigen-vector-pada-matriks-3x3-menggunakan-numpy">Mencari nilai eigen value dan eigen vector pada matriks 3x3 menggunakan numpy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-implementasi-eigenvalue-dan-eigenvector">Contoh Implementasi Eigenvalue dan Eigenvector</a></li>
+</ul>
+</li>
 </ul>
 
             </nav>
@@ -435,9 +433,8 @@ v, hasilnya adalah vektor yang searah dengan
 v itu sendiri, hanya diperbesar atau diperkecil oleh faktor skalar
 𝜆
 λ.</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="menghitung-eigenvalues-dan-eigenvectors">
-<h1>Menghitung Eigenvalues dan Eigenvectors<a class="headerlink" href="#menghitung-eigenvalues-dan-eigenvectors" title="Link to this heading">#</a></h1>
+<section id="menghitung-eigenvalues-dan-eigenvectors">
+<h2>Menghitung Eigenvalues dan Eigenvectors<a class="headerlink" href="#menghitung-eigenvalues-dan-eigenvectors" title="Link to this heading">#</a></h2>
 <p><em>Contoh</em></p>
 <p>Hitung eigen value dan eigen vector dari matrik A</p>
 <div class="math notranslate nohighlight">
@@ -627,8 +624,8 @@ eignvector = [[1,1], [1,-1]]</p>
 \end{matrix}
 \)</span></p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="mencari-nilai-eigen-value-dan-eigen-vector-pada-matriks-2x2-menggunakan-numpy">
-<h1>Mencari nilai eigen value dan eigen vector pada matriks 2x2 menggunakan numpy<a class="headerlink" href="#mencari-nilai-eigen-value-dan-eigen-vector-pada-matriks-2x2-menggunakan-numpy" title="Link to this heading">#</a></h1>
+<section id="mencari-nilai-eigen-value-dan-eigen-vector-pada-matriks-2x2-menggunakan-numpy">
+<h2>Mencari nilai eigen value dan eigen vector pada matriks 2x2 menggunakan numpy<a class="headerlink" href="#mencari-nilai-eigen-value-dan-eigen-vector-pada-matriks-2x2-menggunakan-numpy" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -650,8 +647,8 @@ vector [[-1. -1.]
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="mencari-nilai-eigen-value-dan-eigen-vector-pada-matriks-3x3-menggunakan-numpy">
-<h1>Mencari nilai eigen value dan eigen vector pada matriks 3x3 menggunakan numpy<a class="headerlink" href="#mencari-nilai-eigen-value-dan-eigen-vector-pada-matriks-3x3-menggunakan-numpy" title="Link to this heading">#</a></h1>
+<section id="mencari-nilai-eigen-value-dan-eigen-vector-pada-matriks-3x3-menggunakan-numpy">
+<h2>Mencari nilai eigen value dan eigen vector pada matriks 3x3 menggunakan numpy<a class="headerlink" href="#mencari-nilai-eigen-value-dan-eigen-vector-pada-matriks-3x3-menggunakan-numpy" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -674,8 +671,8 @@ vector [[-0. -1. -1.]
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="contoh-implementasi-eigenvalue-dan-eigenvector">
-<h1>Contoh Implementasi Eigenvalue dan Eigenvector<a class="headerlink" href="#contoh-implementasi-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h1>
+<section id="contoh-implementasi-eigenvalue-dan-eigenvector">
+<h2>Contoh Implementasi Eigenvalue dan Eigenvector<a class="headerlink" href="#contoh-implementasi-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -712,6 +709,7 @@ Eigenvectors:
 </div>
 </div>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -774,11 +772,13 @@ Eigenvectors:
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#v">𝐴
-𝑣</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-eigenvalues-dan-eigenvectors">Menghitung Eigenvalues dan Eigenvectors</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-nilai-eigen-value-dan-eigen-vector-pada-matriks-2x2-menggunakan-numpy">Mencari nilai eigen value dan eigen vector pada matriks 2x2 menggunakan numpy</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-nilai-eigen-value-dan-eigen-vector-pada-matriks-3x3-menggunakan-numpy">Mencari nilai eigen value dan eigen vector pada matriks 3x3 menggunakan numpy</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-implementasi-eigenvalue-dan-eigenvector">Contoh Implementasi Eigenvalue dan Eigenvector</a></li>
+𝑣</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-eigenvalues-dan-eigenvectors">Menghitung Eigenvalues dan Eigenvectors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-nilai-eigen-value-dan-eigen-vector-pada-matriks-2x2-menggunakan-numpy">Mencari nilai eigen value dan eigen vector pada matriks 2x2 menggunakan numpy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-nilai-eigen-value-dan-eigen-vector-pada-matriks-3x3-menggunakan-numpy">Mencari nilai eigen value dan eigen vector pada matriks 3x3 menggunakan numpy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-implementasi-eigenvalue-dan-eigenvector">Contoh Implementasi Eigenvalue dan Eigenvector</a></li>
+</ul>
+</li>
 </ul>
 
   </nav></div>
